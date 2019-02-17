@@ -1,0 +1,287 @@
+  body, html {
+    margin: 0;
+    background: #ccc;
+    font-family: monospace, "微軟正黑體", sans-serif;
+    letter-spacing: 0.65px;
+    font-size: 15px;
+    color: #555;
+    cursor: default;
+  }
+
+  .resume {
+    width: 900px;
+    background: #fbfbfb;
+    margin: 20px auto;
+    border: 1px solid #bbb;
+    box-shadow: 0 0 20px -3px #bbb;
+    position: relative;
+  }
+
+  .resume .profile {
+    width: 240px;
+    background: #8d9e78;
+    padding: 30px 15px 5px 15px;
+    position: relative;
+    z-index: 2;
+    float: left;
+  }
+
+  .resume .profile .photo {
+    padding: 30px 25%;
+  }
+
+  .resume .profile .photo img {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .resume .profile .info {
+    text-align: center;
+    color: #fcfcfc;
+  }
+
+  .resume .profile .info .myname {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 1.5em;
+    font-weight: normal;
+  }
+
+  .resume .profile2 {
+    width: 658px;
+    float: right;
+  }
+
+  .resume .profile2 .motto {
+    padding: 70px 0px;
+    margin-left: 25px;
+  }
+  .resume .profile2 .contact {
+    padding: 25px 0px;
+    margin-left: 25px;
+  }
+  .resume .profile2 .contact div{
+    display: inline;
+  }
+  .resume .profile2 .contact i {
+    color: #fcfcfc;
+    background: #8d9e78;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border-radius: 12%;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 8px;
+    transition-duration: 0.3s;
+  }
+  .resume .profile2 .aboutme {
+    font-size: 1.1rem;
+    line-height: 30px;
+    margin-left: 25px;
+  }
+
+  .resume .func {
+    clear: both;
+    width: 90%;
+    margin: auto;
+    padding-top: 45px;
+  }
+
+  .resume .func h3 i {
+    color: #fcfcfc;
+    background: #8d9e78;
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+    line-height: 42px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 8px;
+    transition-duration: 0.3s;
+  }
+
+  .resume .func .Exrerience, .resume .func .edu {
+    float: left;
+    padding-right: 15px;
+  }
+
+  .resume .func .Exrerience small, .resume .func .edu small {
+    display: block;
+    opacity: 0.7;
+  }
+
+  .resume .skills-prog h3 i {
+    color: #fcfcfc;
+    background: #8d9e78;
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+    line-height: 42px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 8px;
+    transition-duration: 0.3s;
+  }
+
+  .resume .skills-prog {
+    width: 70%;
+    margin: auto;
+  }
+
+  .resume .skills-prog li .progress {
+    width: 400px;
+    float: right;
+    margin-top: 6px;
+  }
+
+  .resume .myawards {
+    width: 87%;
+    margin: auto;
+    margin-top: 45px;
+  }
+
+  .resume .myawards h3 i {
+    color: #fcfcfc;
+    background: #8d9e78;
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+    line-height: 42px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 8px;
+    transition-duration: 0.3s;
+  } //=====以下是時間軸======
+  header:after, #timeline .timeline-item:after, header:before, #timeline .timeline-item:before {
+    content: '';
+    display: block;
+    width: 100%;
+    clear: both;
+  }
+
+  *, *:before, *:after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+  #timeline {
+    width: 100%;
+    margin: 30px auto;
+    position: relative;
+    padding: 0 10px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+
+  #timeline:before {
+    content: "";
+    width: 3px;
+    height: 100%;
+    background: #ee4d4d;
+    left: 690px;
+    top: 0;
+    position: absolute;
+  }
+
+  #timeline:after {
+    content: "";
+    clear: both;
+    display: table;
+    width: 100%;
+  }
+
+  #timeline .timeline-item {
+    position: relative;
+    clear: both;
+  }
+
+  #timeline .timeline-item .timeline-icon {
+    background: #ee4d4d;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 680px;
+    overflow: hidden;
+    margin-left: -23px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+  }
+
+  #timeline .timeline-item .timeline-icon i {
+    color: #fcfcfc;
+    width: 52px;
+    height: 52px;
+    font-size: 32px;
+    line-height: 48px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 8px;
+    transition-duration: 0.3s;
+  }
+
+  #timeline .timeline-item .timeline-content {
+    margin-top: 30px;
+    width: 640px;
+    background: #fff;
+    padding: 20px;
+    -webkit-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  #timeline .timeline-item .timeline-content h5 {
+    padding: 15px;
+    background: #ee4d4d;
+    color: #fff;
+    margin: -20px -20px 0 -20px;
+    font-weight: 300;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    -ms-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+  }
+
+  #timeline .timeline-item .timeline-content:before {
+    content: '';
+    position: absolute;
+    left: 640px;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid #ee4d4d;
+  }
+
+  #timeline .timeline-item .timeline-content.right {
+    float: right;
+  }
+
+  #timeline .timeline-item .timeline-content.right:before {
+    content: '';
+    right: 45%;
+    left: inherit;
+    border-left: 0;
+    border-right: 7px solid #ee4d4d;
+  }
