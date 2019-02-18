@@ -19,7 +19,7 @@
 
   .resume .profile {
     width: 240px;
-    background: #8d9e78;
+    background: #78947e;
     padding: 30px 15px 5px 15px;
     position: relative;
     z-index: 2;
@@ -75,7 +75,7 @@
 
   .resume .profile2 .contact i {
     color: #fcfcfc;
-    background: #8d9e78;
+    background: #494f69;
     width: 40px;
     height: 40px;
     font-size: 20px;
@@ -102,7 +102,7 @@
 
   .resume .func h3 i {
     color: #fcfcfc;
-    background: #8d9e78;
+    background: #78909c;
     width: 42px;
     height: 42px;
     font-size: 20px;
@@ -126,7 +126,7 @@
 
   .resume .skills-prog h3 i {
     color: #fcfcfc;
-    background: #8d9e78;
+    background: #78909c;
     width: 42px;
     height: 42px;
     font-size: 20px;
@@ -163,7 +163,7 @@
 
   .resume .myawards h3 i {
     color: #fcfcfc;
-    background: #8d9e78;
+    background: #78909c;
     width: 42px;
     height: 42px;
     font-size: 20px;
@@ -202,7 +202,7 @@
     content: "";
     width: 3px;
     height: 100%;
-    background: #ee4d4d;
+    background: #78947e;
     left: 690px;
     top: 0;
     position: absolute;
@@ -221,7 +221,7 @@
   }
 
   #timeline .timeline-item .timeline-icon {
-    background: #ee4d4d;
+    background: #78947e;
     width: 50px;
     height: 50px;
     position: absolute;
@@ -269,7 +269,7 @@
 
   #timeline .timeline-item .timeline-content h5 {
     padding: 15px;
-    background: #ee4d4d;
+    background: #78947e;
     color: #fff;
     margin: -20px -20px 0 -20px;
     font-weight: 300;
@@ -288,7 +288,7 @@
     height: 0;
     border-top: 7px solid transparent;
     border-bottom: 7px solid transparent;
-    border-left: 7px solid #ee4d4d;
+    border-left: 7px solid #78947e;
   }
 
   #timeline .timeline-item .timeline-content.right {
@@ -300,5 +300,5 @@
     right: 45%;
     left: inherit;
     border-left: 0;
-    border-right: 7px solid #ee4d4d;
+    border-right: 7px solid #78947e;
   }
