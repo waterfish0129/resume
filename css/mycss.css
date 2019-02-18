@@ -154,6 +154,12 @@
     margin: auto;
     margin-top: 45px;
   }
+  .resume .myawards .award-base {
+    text-align: center;
+  }
+  .resume .myawards .card {
+  display: inline-block;
+  }
 
   .resume .myawards h3 i {
     color: #fcfcfc;
