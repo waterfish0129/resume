@@ -15,29 +15,33 @@ html {
   margin: 20px auto;
   position: relative;
 }
-.resume > section {
+
+.resume>section {
   background: #fbfbfb;
   border: 1px solid #bbb;
   box-shadow: 0 0 20px -3px #bbb;
   margin-top: 12px;
-  padding: 12px;
+  padding: 20px;
   border-radius: 4px;
 }
-.resume > section:first-of-type {
+
+.resume>section:first-of-type {
   padding: 12px 0px;
 }
 
 .baseInfo {
   text-align: center;
 }
+
 .baseInfo .myNav {
-  background-color: #1752ac;
+  background-color: #27648d;
   font-size: 1.75rem;
   color: #fbfbfb;
   text-align: left;
   padding-left: 75px;
   line-height: 40px;
 }
+
 .baseInfo .myNav::before {
   content: " ";
   width: 12px;
@@ -48,7 +52,12 @@ html {
 
   left: 20px;
 }
-.baseInfo > div:not(:first-of-type) {
+
+.baseInfo .myContainer {
+  width: 80%;
+  margin: 0 auto;
+}
+.myContainer > div{
   display: inline-block;
   margin: 8px;
   vertical-align: top;
@@ -57,27 +66,44 @@ html {
   text-align: center;
   vertical-align: middle;
 }
-.baseInfo .seek{
- border-top: 2px #515151  solid;
- width: 50%;
- margin: 0 auto;
- padding: 8px 0 2px 0;
+.myContainer > div:first-of-type{
+  margin-right: 80px;
+}
+.myContainer > div:last-of-type{
+  margin-left: 80px;
+  }
+/* .baseInfo > div:not(:first-of-type) {
+  display: inline-block;
+  margin: 8px;
+  vertical-align: top;
+  min-height: 100%;
+  max-height: 1080px;
+  text-align: center;
+  vertical-align: middle;
+} */
+.baseInfo .seek {
+  border-top: 2px #515151 solid;
+  width: 624px;
+  margin: 0 auto;
+  padding: 8px 0 2px 0;
 }
 
 .myname {
   border-bottom: 2px #515151 solid;
   margin-bottom: 8px;
 }
-.profile{
+
+.profile {
   margin-top: 12px;
 }
-.profile .contact > div {
+
+.profile .contact>div {
   display: flex;
   margin: 4px;
 }
+
 .profile .contact i {
   color: #fcfcfc;
-  background: #5679af;
   width: 40px;
   height: 40px;
   font-size: 20px;
@@ -88,21 +114,33 @@ html {
   margin-right: 8px;
   transition-duration: 0.3s;
 }
+.address i{
+  background: #0077bf;
+}
+.call i {
+  background: #28a362;
+}
+.email i {
+  background: #dc3545;
+}
+
 .profile .contact span {
   margin-top: 12px;
 }
+
 .photo {
   position: relative;
   width: 140px;
   height: 220px;
   margin: 50px;
   color: #ffffff;
-  background-color: #f4d046;
+  background-color: #20527c;
   text-align: center;
   line-height: 48px;
   padding: 16px;
   font-weight: bold;
 }
+
 .photo::before {
   content: "";
   position: absolute;
@@ -111,9 +149,10 @@ html {
   width: 0px;
   height: 0px;
   border-top: 110px solid transparent;
-  border-right: 60px solid #f4d046;
+  border-right: 60px solid #20527c;
   border-bottom: 110px solid transparent;
 }
+
 .photo::after {
   content: "";
   position: absolute;
@@ -122,7 +161,7 @@ html {
   width: 0px;
   height: 0px;
   border-top: 110px solid transparent;
-  border-left: 60px solid #f4d046;
+  border-left: 60px solid #20527c;
   border-bottom: 110px solid transparent;
 }
 
@@ -141,6 +180,7 @@ html {
   left: -56px;
   z-index: 3;
 }
+
 .photo2::before {
   content: "";
   position: absolute;
@@ -152,6 +192,7 @@ html {
   border-right: 54px solid #fbfbfb;
   border-bottom: 98px solid transparent;
 }
+
 .photo2::after {
   content: "";
   position: absolute;
@@ -173,9 +214,11 @@ html {
   top: -16px;
   left: -20px;
 }
-.mainInfo h3 >i ,.myProject h3 >i {
+
+.mainInfo h3>i,
+.myProject h3>i {
   color: #fcfcfc;
-  background: #78909c;
+  background: #27648d;
   width: 42px;
   height: 42px;
   font-size: 20px;
@@ -191,7 +234,10 @@ html {
 .exrerience ul {
   list-style-type: none;
   padding: 0;
+  position: relative;
+  left: 35px;
 }
+
 .edu ul li,
 .exrerience ul li {
   position: relative;
@@ -199,6 +245,7 @@ html {
   padding-left: 25px;
   padding-bottom: 15px;
 }
+
 .edu ul li::before,
 .exrerience ul li::before {
   content: "";
@@ -212,6 +259,7 @@ html {
   left: 0;
   z-index: 1;
 }
+
 .edu ul li::after,
 .exrerience ul li::after {
   content: "";
@@ -223,14 +271,22 @@ html {
   left: 8px;
   top: 0;
 }
+
 .edu small,
 .exrerience small {
   display: block;
   opacity: 0.7;
 }
 
+.skills-prog ul{
+  list-style-type: none;
+  position: relative;
+  left: 35px;
+  display: inline-block;
+}
+
 .skills-prog li .progress {
-  width: 600px;
+  width: 500px;
   float: right;
   margin-top: 6px;
 }
@@ -238,7 +294,8 @@ html {
 .award-base {
   text-align: center;
 }
-.award-base > div {
+
+.award-base>div {
   display: inline-block;
 }
 
@@ -263,7 +320,7 @@ html {
   content: "";
   width: 3px;
   height: 100%;
-  background: #78947e;
+  background: #27648d;
   left: 690px;
   top: 0;
   position: absolute;
@@ -282,8 +339,9 @@ html {
   clear: both;
 }
 
-#timeline .timeline-item .timeline-icon,#timeline .timeline-item-right .timeline-icon {
-  background: #78947e;
+#timeline .timeline-item .timeline-icon,
+#timeline .timeline-item-right .timeline-icon {
+  background: #27648d;
   width: 50px;
   height: 50px;
   position: relative;
@@ -300,12 +358,13 @@ html {
 
 #timeline .timeline-item-right .timeline-icon {
   width: 30px;
-  height: 30px; 
+  height: 30px;
   left: 689px;
   top: 12px;
 }
 
-#timeline .timeline-item .timeline-icon i ,#timeline .timeline-item-right .timeline-icon i{
+#timeline .timeline-item .timeline-icon i,
+#timeline .timeline-item-right .timeline-icon i {
   color: #fcfcfc;
   width: 52px;
   height: 52px;
@@ -318,7 +377,7 @@ html {
   transition-duration: 0.3s;
 }
 
-#timeline .timeline-item-right .timeline-icon i::before{
+#timeline .timeline-item-right .timeline-icon i::before {
   content: "";
   display: block;
   position: absolute;
@@ -331,7 +390,8 @@ html {
   z-index: 1;
 }
 
-#timeline .timeline-item .timeline-content ,#timeline .timeline-item-right  .timeline-content {
+#timeline .timeline-item .timeline-content,
+#timeline .timeline-item-right .timeline-content {
   width: 640px;
   background: #fff;
   padding: 20px;
@@ -351,9 +411,10 @@ html {
   float: right;
 }
 
-#timeline .timeline-item .timeline-content h5,#timeline .timeline-item-right .timeline-content h5 {
+#timeline .timeline-item .timeline-content h5,
+#timeline .timeline-item-right .timeline-content h5 {
   padding: 15px;
-  background: #78947e;
+  background: #27648d;
   color: #fff;
   margin: -20px -20px 0 -20px;
   font-weight: 300;
@@ -372,7 +433,7 @@ html {
   height: 0;
   border-top: 7px solid transparent;
   border-bottom: 7px solid transparent;
-  border-left: 7px solid #78947e;
+  border-left: 7px solid #27648d;
 }
 
 #timeline .timeline-item-right .timeline-content:before {
@@ -384,7 +445,7 @@ html {
   height: 0;
   border-top: 7px solid transparent;
   border-bottom: 7px solid transparent;
-  border-right: 7px solid #78947e;
+  border-right: 7px solid #27648d;
 }
 
 #timeline .timeline-item .timeline-content.right {
@@ -396,5 +457,20 @@ html {
   right: 45%;
   left: inherit;
   border-left: 0;
-  border-right: 7px solid #78947e;
+  border-right: 7px solid #27648d;
+}
+
+.footer{
+background-color: #3a3a3a;
+padding-top: 24px;
+padding-bottom: 16px;
+width: 900px;
+margin: 0 auto;
+text-align: center;
+color: #fbfbfb;
+}
+.footer a{
+  text-decoration: none;
+  color: #fbfbfb;
+  transition: color 0.1s linear;
 }
