@@ -114,14 +114,15 @@ html {
   margin-right: 8px;
   transition-duration: 0.3s;
 }
+
 .address i{
-  background: #0077bf;
+  background: #1b8cce;
 }
 .call i {
-  background: #28a362;
+  background: #92ca3d;
 }
 .email i {
-  background: #dc3545;
+  background: #e44848;
 }
 
 .profile .contact span {
